@@ -1,0 +1,27 @@
+.app{
+    height: 100vh;
+
+    .sections{
+        width: 100%;
+        // factoring top bar in
+        height: calc(100vh - 70px); 
+        background-color: lightsalmon;
+        position: relative;
+        top: 70px;
+        // smooths and slow scrolling
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none; //firefox
+        &::-webkit-scrollbar{
+        display: none;
+        }
+        // this should my my sections thicker while still showing topbar
+        > *{
+             width: 100vw;
+             height: calc(100vh - 70px);
+             scroll-snap-align: start;
+        }
+
+        
+    }
+}
