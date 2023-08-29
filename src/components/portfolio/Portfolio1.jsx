@@ -11,7 +11,7 @@ const Portfolio1 = () => {
     return (
           <div className="portfolio1" id="portfolio1">
             <h1>
-              genius.
+              Portfolio
             </h1>
           </div>
     );

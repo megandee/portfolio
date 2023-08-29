@@ -21,7 +21,7 @@ const Intro = () => {
     return (
           <div className="intro" id="intro">
             <h1>
-              genius.
+              Intro
             </h1>
           </div>
     );

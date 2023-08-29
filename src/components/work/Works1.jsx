@@ -11,7 +11,7 @@ const Works1 = () => {
     return (
           <div className="works1" id="works1">
             <h1>
-              genius.
+              Work
             </h1>
           </div>
     );
