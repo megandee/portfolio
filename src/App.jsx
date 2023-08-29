@@ -11,13 +11,13 @@ function App() {
   return (
     <div className="app">
       <Topbar/>
-      <div className="sections"></div>
+      <div className="sections">
       <Intro/>
-      fgdrfd
       <Portfolio1/>
       <Works1/>
       <Testimonials/>
       <Contact/>
+      </div>
       
     
     </div>

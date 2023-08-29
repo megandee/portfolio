@@ -19,7 +19,7 @@ const Contact = () => {
     return (
           <div className="contact" id="contact">
             <h1>
-              genius.
+              Contact
             </h1>
           </div>
     );
