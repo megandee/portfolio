@@ -10,6 +10,8 @@
     z-index: 2;
     // overflow: hidden;
     font-size: 12px;
+    // will smooth color transition
+    transition: all 1s ease;
 
     .wrapper{
         // padding: 10px 30px;
@@ -32,8 +34,8 @@
             .itemContainer{
                 display: flex;
                 align-items: center;
-                // should space my icons and info but isnt..
-                margin-left: 30px;
+                // // should space my icons and info but isnt..
+                margin-left: 30px !important;
 
                 .icon{
                     font-size: 18px;
@@ -47,6 +49,45 @@
             }
         }
         
+        .right{
+
+            .hamburger{
+                width: 32px;
+                height: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+                 
+                span{
+                    width: 100%;
+                    height: 3px;
+                    background-color: $mainColor;
+                    transform-origin: left;
+                    transition: all 2s ease;
+                }
+            }
+        }
     }
     
+    &.active{
+        background-color: $mainColor;
+        color: whitesmoke;
+
+        .hamburger{
+            span{
+                &:first-child{
+                    background-color: whitesmoke;
+                    transform: rotate(45deg);
+                } 
+                &:nth-child(2){
+                    opacity: 0;
+                }
+                &:last-child{
+                    background-color: whitesmoke;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
 }
